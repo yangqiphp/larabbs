@@ -12,7 +12,7 @@
 
             <!-- Branding Image -->
             <a class="navbar-brand" href="{{ url('/') }}">
-                手工吉他中国网
+                手工吉他网
             </a>
         </div>
 
