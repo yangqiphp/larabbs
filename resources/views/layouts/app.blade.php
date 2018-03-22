@@ -7,6 +7,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="description" content="@yield('description', '手工吉他网')">
 
     <title>@yield('title', 'LaraBBS') - Handel Guitar - 手工吉他中国网</title>
 
