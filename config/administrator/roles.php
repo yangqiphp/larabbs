@@ -8,7 +8,7 @@ return [
     'single' => '角色',
     'model' => Role::class,
 
-    'permissions' => function()
+    'permission' => function()
     {
         return Auth::user()->can('manage_users');
     },
