@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <title>@yield('title', 'LaraBBS') - {{setting('site_name', '手工吉他网')}}</title>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="description" content="@yield('description', '手工吉他网')">
+    <meta name="description" content="@yield('description', setting('seo_description', '手工吉他爱好者社区'))">
+    <meta name="keyword" content="@yield('keyword', setting('seo_keyword', 'Handle Guitar,社区,论坛, 手工吉他'))" />
 
-    <title>@yield('title', 'LaraBBS') - Handel Guitar - 手工吉他网</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
