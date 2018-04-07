@@ -26,6 +26,8 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
+        $schedule->command('handleguitar:calculate-active-user')->hourly();
+        $schedule->command('handleguitar:sync-user-actived-at')->dailyAt('00:00');
     }
 
     /**
